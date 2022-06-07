@@ -3,6 +3,7 @@ import { defineStore } from "pinia"
 export const useNavigationStore = defineStore({
   id: "navigation",
   state: () => ({
+    mobileNavDrawer: false,
     navDrawerLinksList: [
       {
         prependIcon: "mdi-account-group",
@@ -77,5 +78,9 @@ export const useNavigationStore = defineStore({
     }
   }),
   getters: {},
-  actions: {}
+  actions: {
+    toggleDrawer() {
+      this.mobileNavDrawer ? this.mobileNavDrawer = false : this.mobileNavDrawer = true;
+    }
+  }
 })

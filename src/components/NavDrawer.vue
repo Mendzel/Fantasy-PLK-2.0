@@ -24,30 +24,30 @@
       </router-link>
     </v-list>
 
-    <template v-slot:append>
-      <v-list nav>
-        <router-link class="link" :to="{name: 'admin'}">
-          <v-list-item
-            prepend-icon="mdi-shield-account"
-            title="Panel Administratora"
-            value="admin"
-            active-class="no-active"
-          ></v-list-item>
-        </router-link>
+    <v-divider class="mb-2"></v-divider>
+
+    <v-list nav>
+      <router-link class="link" :to="{ name: 'admin' }">
         <v-list-item
-          prependIcon="mdi-cog"
-          title="Ustawienia konta"
-          value="settings"
+          prepend-icon="mdi-shield-account"
+          title="Panel Administratora"
+          value="admin"
           active-class="no-active"
         ></v-list-item>
-        <v-list-item
-          prependIcon="mdi-logout"
-          title="Wyloguj"
-          value="logout"
-          class="no-active"
-        ></v-list-item>
-      </v-list>
-    </template>
+      </router-link>
+      <v-list-item
+        prependIcon="mdi-cog"
+        title="Ustawienia konta"
+        value="settings"
+        active-class="no-active"
+      ></v-list-item>
+      <v-list-item
+        prependIcon="mdi-logout"
+        title="Wyloguj"
+        value="logout"
+        class="no-active"
+      ></v-list-item>
+    </v-list>
   </v-navigation-drawer>
 </template>
 

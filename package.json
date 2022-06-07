@@ -13,6 +13,7 @@
     "pinia": "^2.0.13",
     "roboto-fontface": "*",
     "vue": "^3.2.33",
+    "vue-country-flag-next": "^2.3.2",
     "vue-router": "^4.0.14",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
